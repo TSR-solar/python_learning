@@ -80,7 +80,7 @@ IndexError: list index out of range
 ```
 
 ## 列表元素的删除
-使用函数或运算符实现；
+使用函数或语句实现；
 
 ### `L.pop(index)`
 删去下标为`index`的元素，`index`右边的元素下标-1；  
@@ -127,7 +127,7 @@ ValueError: list.remove(x): x not in list
 ```
 
 ### `del`
-del是运算符，不是函数；  
+del是语句，不是函数；  
 del后不会输出删去的元素值；
 ```py
 >>> a=[1,3,5,7,9]
@@ -175,13 +175,13 @@ Traceback (most recent call last):
 ValueError: 3 is not in list
 ```
 
-此外，还可以用运算符`in`来判断元素是否在列表中，不过结果是布尔值，不能指明元素的下标；  
+此外，还可以用运算符`in`和`not in`来判断元素是否在（不在）列表中，不过结果是布尔值，不能指明元素的下标；  
 ```py
 >>> a=[1,3,5,7,9]
 >>> 1 in a
 True
->>> 2 in a
-False
+>>> 2 not in a
+True
 ```
 
 ### `L.extend(x)`
